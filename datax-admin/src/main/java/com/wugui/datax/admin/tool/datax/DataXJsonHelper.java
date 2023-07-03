@@ -181,10 +181,10 @@ public class DataXJsonHelper {
     public Map<String, Object> buildJob() {
         Map<String, Object> res = Maps.newLinkedHashMap();
         Map<String, Object> jobMap = Maps.newLinkedHashMap();
-        jobMap.put("core",buildCore());
         jobMap.put("setting", buildSetting());
         jobMap.put("content", ImmutableList.of(buildContent()));
         res.put("job", jobMap);
+        res.put("core",buildCore());
         return res;
     }
 
@@ -201,7 +201,7 @@ public class DataXJsonHelper {
         Map<String, Object> transportMap = Maps.newLinkedHashMap();
         Map<String, Object> channelMap = Maps.newLinkedHashMap();
         Map<String, Object> speedMap = Maps.newLinkedHashMap();
-        speedMap.put("byte",1048576/3);
+        speedMap.put("byte",2097152);
         channelMap.put("speed",speedMap);
         transportMap.put("channel",channelMap);
         result.put("transport",transportMap);
@@ -220,7 +220,7 @@ public class DataXJsonHelper {
         Map<String, Object> res = Maps.newLinkedHashMap();
         Map<String, Object> speedMap = Maps.newLinkedHashMap();
         Map<String, Object> errorLimitMap = Maps.newLinkedHashMap();
-        speedMap.putAll(ImmutableMap.of("channel", 3, "byte", 1048576));
+        speedMap.putAll(ImmutableMap.of("channel", 5, "byte", 10485760));
         errorLimitMap.putAll(ImmutableMap.of("record", 0, "percentage", 0.02));
         res.put("speed", speedMap);
         res.put("errorLimit", errorLimitMap);

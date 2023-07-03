@@ -34,8 +34,8 @@
         <commons-io.version>2.4</commons-io.version>
         <junit.version>4.12</junit.version>
         <hutool.version>5.7.2</hutool.version>
-        <postgresql.version>42.2.5</postgresql.version>
-        <mysql-connector.version>5.1.47</mysql-connector.version>
+        <postgresql.version>42.5.4</postgresql.version>
+        <mysql-connector.version>8.0.33</mysql-connector.version>
         <jna.version>4.1.0</jna.version>
         <groovy.version>2.5.8</groovy.version>
         <mybatisplus.version>3.4.2</mybatisplus.version>

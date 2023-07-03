@@ -256,7 +256,7 @@ datax-admin 修改文件位置  /datax-admin/src/main/resources/application.yml
     username: root
     password: your password
     url: jdbc:mysql://ip:port/datax_web?serverTimezone=Asia/Shanghai&useLegacyDatetimeCode=false&useSSL=false&nullNamePatternMatchesAll=true&useUnicode=true&characterEncoding=UTF-8
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 ```
 
